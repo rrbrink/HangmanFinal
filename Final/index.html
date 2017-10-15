@@ -1,0 +1,60 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Ryans Hangman Game</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        
+        
+    </head>
+    <body>
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Hangman With Food</h1>
+                <p>I love food so you can guess all of my favorite meals with a game!</p>
+
+            </div>
+            <!--Primary game box-->
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Try to guess the best foods.</h3>
+                </div>
+                
+                <div class="panel body">
+                    <h2 id="wordToGuess">_ _ _ _ _ _</h2>
+                </div>
+
+            </div>
+        </div>
+        <!--how many letters guessed-->
+        <div id="bodybox" class="panel panel-danger">
+            <div class="panel-body">
+                Wrong letters <span id="wrongGuesses"></span>
+            </div>
+         </div>
+
+         <!--turns left-->
+             <div id="bodybox" class="panel panel-info">
+                <div class="panel-body">
+                    Turns Left <span id="numGuesses"></span>
+                </div>
+             </div>
+             <!--Right-->
+             <div id="bodybox" class="panel panel-info">
+                    <div class="panel-body"> Guessed right!<span id="win"></span>
+                    </div>
+             </div>
+                <!--Wrong-->
+             <div id="bodybox" class="panel panel-info">
+                    <div class="panel-body"> Guessed Wrong :(<span id="loss"></span>
+                    </div>
+             </div>
+             <!--javaScript&JQuery-->
+             <script src="logic.js"></script>
+             
+
+
+
+        </div>
+    </body>
+</html>
